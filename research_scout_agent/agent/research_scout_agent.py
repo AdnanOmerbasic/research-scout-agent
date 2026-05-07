@@ -79,7 +79,7 @@ def main():
     user_proxy = create_user_proxy()
     research_agent = create_research_agent()
 
-    prompt = "Find a paper about Python programming published before 2021 with more than 500 citations."
+    prompt = "Find a paper about software testing published after 2020 with at least 100 citations. Explain why it is relevant for software quality."
 
     user_proxy.initiate_chat(research_agent, message=prompt)
 
